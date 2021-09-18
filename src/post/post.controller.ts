@@ -24,6 +24,8 @@ export class PostController {
 
   @Get()
   findAll(): Promise<MyPost[]> {
+    console.log('test');
+    
     return this.postService.findAll();
   }
 
